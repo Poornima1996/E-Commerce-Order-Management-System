@@ -29,5 +29,5 @@ services:
     dockerContext: ./frontend
     envVars:
       - key: VITE_API_URL
-        value: https://ecommerce-backend.onrender.com/api
+        value: https://ecommerce-backend-p8wu.onrender.com/api
 

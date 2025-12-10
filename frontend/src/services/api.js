@@ -6,7 +6,7 @@ import axios from 'axios';
 // Use environment variable if available, otherwise use production URL
 const API_BASE_URL = import.meta.env.VITE_API_URL ||
   (import.meta.env.MODE === 'production'
-    ? 'https://ecommerce-backend.onrender.com/api'
+    ? 'https://ecommerce-backend-p8wu.onrender.com/api'
     : 'http://localhost:8000/api');
 
 const api = axios.create({
