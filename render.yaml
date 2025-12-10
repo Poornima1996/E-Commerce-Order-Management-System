@@ -1,7 +1,6 @@
 databases:
   - name: ecommerce-db
     databaseName: ecommerce_db
-    user: postgres
     plan: free
 
 services:
@@ -30,9 +29,5 @@ services:
     dockerContext: ./frontend
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: ecommerce-backend
-          property: host
-          envVarKey: RENDER_EXTERNAL_URL
+        sync: false
 
